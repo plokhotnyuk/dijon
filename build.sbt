@@ -9,7 +9,7 @@ description := "Boiler-free JSON wrangling using Scala dynamic types"
 
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
-organization := "com.github.pathikrit"
+organization := "com.github.plokhotnyuk"
 
 resolvers += Resolver.sonatypeRepo("staging")
 
@@ -20,7 +20,7 @@ crossScalaVersions := Seq("2.11.12", "2.12.12", "2.13.3")
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-language:existentials", "-language:dynamics,higherKinds")
 
 libraryDependencies ++= Seq(
-  "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-core" % "2.6.1",
+  "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-core" % "2.6.2",
   "org.scala-lang.modules" %% "scala-collection-compat" % "2.2.0",
   "org.scalatest" %% "scalatest" % "3.2.2" % Test
 )
@@ -53,16 +53,21 @@ publishMavenStyle := true
 pomIncludeRepository := { _ => false }
 
 pomExtra := {
-  <url>http://github.com/pathikrit/dijon</url>
+  <url>http://github.com/plokhotnyuk/dijon</url>
   <scm>
-    <url>git@github.com:pathikrit/dijon.git</url>
-    <connection>scm:git:git@github.com:pathikrit/dijon.git</connection>
+    <url>git@github.com:plokhotnyuk/dijon.git</url>
+    <connection>scm:git:git@github.com:plokhotnyuk/dijon.git</connection>
   </scm>
   <developers>
     <developer>
       <id>pathikrit</id>
       <name>Pathikrit Bhowmick</name>
       <url>http://github.com/pathikrit</url>
+    </developer>
+    <developer>
+      <id>plokhotnyuk</id>
+      <name>Andriy Plokhotnyuk</name>
+      <url>http://github.com/plokhotnyuk</url>
     </developer>
   </developers>
 }

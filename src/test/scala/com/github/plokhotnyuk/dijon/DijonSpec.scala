@@ -1,4 +1,4 @@
-package com.github.pathikrit.dijon
+package com.github.plokhotnyuk.dijon
 
 import com.github.plokhotnyuk.jsoniter_scala.core.{JsonReaderException, JsonWriterException}
 

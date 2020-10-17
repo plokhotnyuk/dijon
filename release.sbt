@@ -40,3 +40,5 @@ releaseProcess := Seq[ReleaseStep](
   commitNextVersion,
   pushChanges
 )
+
+releaseVcsSign := true

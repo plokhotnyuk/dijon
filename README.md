@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/pathikrit/dijon.png?branch=master)](http://travis-ci.org/pathikrit/dijon)
-[![Coverage Status](https://coveralls.io/repos/github/pathikrit/dijon/badge.svg?branch=master)](https://coveralls.io/github/pathikrit/dijon?branch=master)
+[![Build Status](https://travis-ci.org/plokhotnyuk/dijon.png?branch=master)](http://travis-ci.org/plokhotnyuk/dijon)
+[![Coverage Status](https://coveralls.io/repos/github/plokhotnyuk/dijon/badge.svg?branch=master)](https://coveralls.io/github/plokhotnyuk/dijon?branch=master)
 
 dijon - Dynamic JSON in Scala
 =====
-* Boiler-free JSON wrangling using Scala [Dynamic Types](https://www.scala-lang.org/api/2.13.2/scala/Dynamic.html)
+* Boiler-free JSON wrangling using Scala [Dynamic Types](https://www.scala-lang.org/api/2.13.3/scala/Dynamic.html)
 * Support of [RFC8259](https://tools.ietf.org/html/rfc8259) using a codec based on [jsoniter-scala-core][2] that [passes all JSONTestSuite checks](https://github.com/nst/JSONTestSuite/pull/99)
 * Why yet another Scala JSON library? Well, code speaks more than thousand words:
 
@@ -91,7 +91,7 @@ assert(scala == scalaCopy)       // original json objects stay untouched after m
 assert(java == javaCopy)
 ```
 
-* [Union types](src/main/scala/com/github/pathikrit/dijon/UnionType.scala) for [type-safety](src/main/scala/com/github/pathikrit/dijon/package.scala#L11):
+* [Union types](src/main/scala/com/github/plokhotnyuk/dijon/UnionType.scala) for [type-safety](src/main/scala/com/github/plokhotnyuk/dijon/package.scala#L11):
 ```scala
 val json = `{}`
 json.aString = "hi"                        // compiles
@@ -149,7 +149,7 @@ Usage
 ===
 1. Add the following to your `build.sbt`:
 ```scala
-libraryDependency += "com.github.pathikrit" %% "dijon" % "0.3.0"
+libraryDependency += "com.github.plokhotnyuk" %% "dijon" % "0.3.0"
 ```
 2. Turn on support of dynamic types by adding import clause:
 ```scala
@@ -161,7 +161,7 @@ scalacOptions += "-language:dynamics"
 ```
 3. Add import of the package object of `dijon` for the main functionality:
 ```scala
-import com.github.pathikrit.dijon._
+import com.github.plokhotnyuk.dijon._
 ```
 4. Optionally, add import of package object of `jsoniter-scala-core` for an extended functionality:
 ```scala
@@ -177,6 +177,6 @@ TODO
 * JSON string interpolator fills in braces, quotes and commas etc
 * Remove warnings
 
-[1]: src/test/scala/com/github/pathikrit/dijon/DijonSpec.scala
+[1]: src/test/scala/com/github/plokhotnyuk/dijon/DijonSpec.scala
 [2]: https://github.com/plokhotnyuk/jsoniter-scala/blob/master/jsoniter-scala-core/src/main/scala/com/github/plokhotnyuk/jsoniter_scala/core/package.scala
 [3]: https://github.com/plokhotnyuk/jsoniter-scala/blob/master/jsoniter-scala-core/src/test/scala/com/github/plokhotnyuk/jsoniter_scala/core/PackageSpec.scala

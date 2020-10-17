@@ -1,9 +1,9 @@
-package com.github.pathikrit
+package com.github.plokhotnyuk
 
 import java.nio.charset.StandardCharsets._
 import java.util
 
-import com.github.pathikrit.dijon.UnionType.{∅, ∨}
+import com.github.plokhotnyuk.dijon.UnionType.{∅, ∨}
 import com.github.plokhotnyuk.jsoniter_scala.core._
 
 import scala.jdk.CollectionConverters._
